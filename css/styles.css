@@ -160,20 +160,33 @@ body {
 }
 
 /* Hero */
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 188px 0 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero.jpg);
+    max-width: 1440px;
+  }
+}
 .hero-section {
   background-color: var(--hero-background-color);
-  padding: 188px 0 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-color: var(--hero-background-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/hero-2x.jpg);
+  }
 }
 .container-hero {
   max-width: 496px;
@@ -206,6 +219,7 @@ body {
   background-color: var(--pressed-state-color);
 }
 
+
 /* Section Specialty */
 .visually-hidden {
   position: absolute;
@@ -219,31 +233,32 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.specialty-items {
-  display: flex;
-  gap: 24px;
-}
-.specialty-icons {
-  background-color: var(--light-color);
-  padding: 24px 100px;
-  width: 264px;
-  height: 112px;
+@media screen and (min-width: 1200px) {
+  .specialty-items {
+    display: flex;
+    gap: 24px;
+  }
+  .specialty-icons {
+    background-color: var(--light-color);
+    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
 
+  }
+  .subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--hero-background-color);
+  }
+  .specialty-subtitle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .text {
+    font-size: 16px;
+  }
 }
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--hero-background-color);
-}
-.specialty-subtitle {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.text {
-  font-size: 16px;
-}
-
 /* Section Features */
 .features-section {
   padding-bottom: 120px;

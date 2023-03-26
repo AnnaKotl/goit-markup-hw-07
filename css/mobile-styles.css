@@ -54,10 +54,10 @@
         padding-right: 16px;
     }
 }
-
+/* ======NAVIGATION mobile 0-767px====== */
 @media screen and (max-width: 767px) {
     .container {
-        width: 100%;
+        width: 100%;    
         margin: 0;
         padding-left: 16px;
         padding-right: 16px;
@@ -174,8 +174,45 @@
         padding-left: 40px;
     }
 }
-
-
+/* ======HERO mobile 0-767px====== */
+@media screen and (max-width: 767px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero-mob.jpg);
+    }
+    .container-hero {
+        max-width: 428px;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+    .hero-title {
+        min-width: 320px;
+        text-align: center;
+        padding-top: 112px;
+        margin-bottom: 88px;
+        font-size: 36px;
+        line-height: 1,11;
+    }
+    .hero-btn {
+        margin-bottom: 112px;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+screen and (min-resolution: 192dpi) and (min-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 767px) {
+    .hero-section {
+        background-color: var(--hero-background-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero-mob-2x.jpg);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .specialty-section {
+        display: none;
+    }
+}
 
 /* --------------TABLET------------ */
 /* ==============768px=(16px*2)+736px
