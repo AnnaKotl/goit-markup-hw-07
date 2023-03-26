@@ -67,7 +67,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
   }
-
   .section {
     padding-top: 120px;
   }
@@ -76,6 +75,7 @@ body {
   list-style: none;
 }
 .link {
+  font-style: normal;
   text-decoration: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -149,7 +149,6 @@ body {
   gap: 40px;
 }
 .contacts-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: var(--text-color);
