@@ -169,15 +169,13 @@ body {
       ),
       url(../images/hero.jpg);
     max-width: 1440px;
+    background-color: var(--hero-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-.hero-section {
-  background-color: var(--hero-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -186,6 +184,12 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-res
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/hero-2x.jpg);
+    background-color: var(--hero-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .container-hero {
