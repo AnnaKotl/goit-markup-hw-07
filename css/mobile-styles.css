@@ -24,7 +24,72 @@
     --primari-font: 'Roboto', sans-serif;
     --secondari-font: 'Raleway', sans-serif;
 }
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-family: var(--primari-font);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    font-style: normal;
+    text-decoration: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text {
+    font-size: 16px;
+}
+
+.focus-finger-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.focus-function-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ==================Mobile First
 Три точки перелому: 
 480px,
@@ -55,6 +120,7 @@
         padding-right: 16px;
     }
 }
+
 /* ======NAVIGATION mobile 0-767px====== */
 @media screen and (max-width: 767px) {
     .container {
@@ -74,8 +140,7 @@
         line-height: 0;
     }
     .mobile-menu {
-        display: flex;
-        flex-direction: column;
+        position: relative;
         height: 100%;
         max-height: 796px;
         width: 100%;
@@ -107,8 +172,6 @@
         position: absolute;
         top: 24px;
         right: 24px;
-        align-items: center;
-        justify-content: center;
         width: 24px;
         height: 24px;
         padding: 0;
@@ -174,6 +237,7 @@
     }
 
 }
+
 /* ======HERO mobile 0-767px====== */
 @media screen and (max-width: 767px) {
     .hero-section {
@@ -226,13 +290,43 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-right: auto;
     }
 }
-@media screen and (max-width: 1200px) {
-    .specialty-section {
-        display: none;
+
+/* ======Specialty section mobile 0-767px====== */
+@media screen and (max-width: 767px) {
+    .section {
+        padding: 96px 0;
     }
+    .specialty-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .specialty-items .specialty-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+    .specialty-text {
+        font-weight: 500;
+    }
+    
+}   
+/* ======Team section mobile 0-767px====== */
+@media screen and (max-width: 767px) {
+
 }
 
 
+
+
+@media screen and (max-width: 1200px) {
+    .specialty-icons {
+        display: none;
+    }
+    .features-section {
+        display: none;
+    }
+}
 
 /* --------------TABLET------------ */
 /* ==============768px=(16px*2)+736px
@@ -246,5 +340,32 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .burger-btn, .mobile-menu {
         display: none;
     }
+    /* Specialty section tablet */
+    .specialty-items {
+        display: flex;
+        gap: 24px;
+    }
+
+    .specialty-icons {
+        background-color: var(--light-color);
+        padding: 24px 100px;
+        width: 264px;
+        height: 112px;
+
+    }
+
+    .subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--hero-background-color);
+    }
+
+    .specialty-subtitle {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    
 }
 
