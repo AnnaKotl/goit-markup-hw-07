@@ -36,7 +36,7 @@
     padding-left: auto;
     padding-right: auto;
 }
-
+/* ????????????????????????? */
 @media screen and (min-width: 320px) {
     .container {
         min-width: 288px;
@@ -74,6 +74,8 @@
         line-height: 0;
     }
     .mobile-menu {
+        display: flex;
+        flex-direction: column;
         height: 100%;
         max-height: 796px;
         width: 100%;
@@ -94,7 +96,12 @@
         pointer-events: auto;
     }
     .mobile-menu-container {
-        padding: 80px 24px 0 24px;
+        height: 100%;
+        max-height: 796px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 24px 40px 24px;
     }
     .mobile-menu-btn {
         position: absolute;
@@ -116,9 +123,6 @@
     }
     .second-mobile-menu-container {
         margin-top: auto;
-        width: 100%;
-        position: absolute;
-        bottom: 40px;    
     }
     .mobile-nav-item {
         padding-bottom: 40px;
