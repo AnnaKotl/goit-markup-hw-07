@@ -45,9 +45,9 @@
 }
 
 @media screen and (max-width: 480px) {
-    body {
+    /* body {
         font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (750 - 320)));
-    }
+    } */
     .container {
         width: 428px;
         margin: 0;
@@ -184,13 +184,19 @@
         margin-right: auto;
     }
     .container-hero {
-        max-width: 428px;
-        padding-left: 54px;
-        padding-right: 54px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
     }
     .hero-title {
-        min-width: 320px;
+        max-width: 320px;
         text-align: center;
+        min-width: 320px;
         padding-top: 112px;
         margin-bottom: 88px;
         font-size: 36px;
