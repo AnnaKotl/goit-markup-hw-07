@@ -41,12 +41,13 @@
     .container {
         min-width: 288px;
         margin: 0;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (750 - 320)));
+    }
     .container {
         width: 428px;
         margin: 0;
@@ -93,7 +94,7 @@
         pointer-events: auto;
     }
     .mobile-menu-container {
-        padding: 80px 24px 0 40px;
+        padding: 80px 24px 0 24px;
     }
     .mobile-menu-btn {
         position: absolute;
