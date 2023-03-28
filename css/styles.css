@@ -213,11 +213,161 @@ body {
     width: 168px;
     height: 88px;
   }
-  
+
+  /* Footer */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: auto;
+  }
+  .footer-container {
+    margin-right: 120px;
+  }
+  .footer-logo {
+    line-height: 1.33;
+    padding: 24px 0;
+  }
+  .footer-text {
+    margin-top: 16px;
+  }
+
+  /* Social media */
+  .social-media-container {
+    margin-right: auto;
+  }
+  .sociak-media-link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .sociak-media-icon {
+    fill: currentColor;
+  }
+  .sociak-media-link:is(:hover, :focus) {
+    background-color: var(--succes-color);
+  }
+  /* --------footer form */
+  .footer-forma-container {
+    display: flex;
+    width: 453px;
+    height: 80px;
+    margin-left: auto;
+    margin-bottom: 100px;
+  }
+  .footer-title {
+    display: block;
+  }
+  .container-form {
+    display: flex;
+  }
+  .footer-email {
+    width: 264px;
+    height: 40px;
+    padding: 8px 0 8px 16px;
+  }
+  .footer-form-btn {
+    margin-left: 24px;
+  }
 
 }
 
-
+/* ===Footer - for all devise===*/
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  font-family: var(--secondari-font);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+}
+.logo-footer {
+  color: var(--primary-brand-color);
+}
+.footer-text {
+  font-size: 16px;
+  color: var(--accent-color);
+  max-width: 264px;
+}
+.footer-title {
+  color: var(--white-color);
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Social media - for all devise*/
+.sociak-media-list {
+  display: flex;
+  gap: 16px;
+}
+/* Footer form - for all devise*/
+.footer-email {
+  background-color: var(--hero-background-color);
+  border: 1px solid var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  opacity: 0.3;
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email::placeholder {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  padding: 8px 0 8px 16px;
+}
+.footer-email:not(:placeholder-shown) {
+  border-color: var(--primary-brand-color);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.footer-email:placeholder-shown {
+  border-color: var(--white-color);
+}
+.footer-form-btn {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  max-width: 165px;
+  max-height: 40px;
+  font-family: var(--primari-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+.footer-form-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+.footer-forma-icon {
+  width: 24px;
+  height: 24px;
+}
 
 /* ================================ */
 /* ===Navigation - for all devise===*/
@@ -375,142 +525,7 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   fill: currentColor;
 }
 
-/* Footer */
-.footer {
-  background-color: var(--hero-background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-flex {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-left: auto;
-}
-.footer-container {
-  margin-right: 120px;
-}
-.footer-logo {
-  font-family: var(--secondari-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  padding: 24px 0;
-  color: var(--light-color);
-}
-.logo-footer {
-  color: var(--primary-brand-color);
-}
-.footer-text {
-  font-size: 16px;
-  color: var(--accent-color);
-  max-width: 264px;
-  margin-top: 16px;
-}
 
-/* Social media */
-.social-media-container {
-  margin-right: auto;
-}
-.footer-title {
-  color: var(--white-color);
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-}
-.sociak-media-list {
-  display: flex;
-  gap: 16px;
-}
-.sociak-media-link {
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  color: var(--white-color);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-.sociak-media-icon {
-  fill: currentColor;
-}
-.sociak-media-link:is(:hover, :focus) {
-  background-color: var(--succes-color);
-}
-/* ------------------------footer form */
-.footer-forma-container {
-  display: flex;
-  width: 453px;
-  height: 80px;
-  margin-left: auto;
-  margin-bottom: 100px;
-}
-.footer-title {
-  display: block;
-}
-.container-form {
-  display: flex;
-}
-.footer-email {
-  background-color: var(--hero-background-color);
-  border: 1px solid var(--white-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  outline: none;
-  width: 264px;
-  height: 40px;
-  padding: 8px 0 8px 16px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-email::placeholder {
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-}
-.footer-email:not(:placeholder-shown) {
-  border-color: var(--primary-brand-color);
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-.footer-email:placeholder-shown {
-  border-color: var(--white-color);
-}
-.footer-form-btn {
-  color: var(--white-color);
-  background-color: var(--primary-brand-color);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  margin-left: 24px;
-  gap: 16px;
-  max-width: 165px;
-  max-height: 40px;
-  font-family: var(--primari-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-}
-.footer-form-btn:is(:hover, :focus) {
-  background-color: var(--pressed-state-color);
-}
-.footer-forma-icon {
-  width: 24px;
-  height: 24px;
-}
 
 /* --------------------------------modal----------------------------------- */
 .backdrop {
