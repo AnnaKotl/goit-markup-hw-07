@@ -388,6 +388,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         height: 100%;
     }
     .modal-subtitle {
+        margin-left: 16px;
+    }
+    .modal-icon {
+        top: 28px;
+        left: 34px;
     }
     .modal-text {
         max-width: 360px;
@@ -396,8 +401,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         width: calc(100% - 2 * 15px);
     }
     .textarea {
+        max-width: 360px;
         max-height: 120px;
-        width: calc(100% - 2 * 15px);
     }
     .accept-check .checkbox-groups {
         display: inline-flex;
