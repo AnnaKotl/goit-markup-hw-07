@@ -279,95 +279,35 @@ body {
   .footer-form-btn {
     margin-left: 24px;
   }
-
+    /* --------modal */
+  .modal {
+    width: 408px;
+    min-height: 576px;
+  }
+  .modal-text {
+    width: 360px;
+    height: 40px;
+    margin: 4px 24px 8px;
+  }
+  .textarea {
+    width: 360px;
+    min-height: 120px;
+  }
+  .submit-modal {
+    margin: 24px 120px;
+  }
+  .accept-check {
+    display: flex;
+    align-items: center;
+  }
+  .accept-check .checkbox-groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-/* ===Footer - for all devise===*/
-.footer {
-  background-color: var(--hero-background-color);
-}
-.footer-logo {
-  font-family: var(--secondari-font);
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  color: var(--light-color);
-}
-.logo-footer {
-  color: var(--primary-brand-color);
-}
-.footer-text {
-  font-size: 16px;
-  color: var(--accent-color);
-  max-width: 264px;
-}
-.footer-title {
-  color: var(--white-color);
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-}
-/* Social media - for all devise*/
-.sociak-media-list {
-  display: flex;
-  gap: 16px;
-}
-/* Footer form - for all devise*/
-.footer-email {
-  background-color: var(--hero-background-color);
-  border: 1px solid var(--white-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  opacity: 0.3;
-  outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-email::placeholder {
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  padding: 8px 0 8px 16px;
-}
-.footer-email:not(:placeholder-shown) {
-  border-color: var(--primary-brand-color);
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-.footer-email:placeholder-shown {
-  border-color: var(--white-color);
-}
-.footer-form-btn {
-  color: var(--white-color);
-  background-color: var(--primary-brand-color);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 8px 24px;
-  max-width: 165px;
-  max-height: 40px;
-  font-family: var(--primari-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-}
-.footer-form-btn:is(:hover, :focus) {
-  background-color: var(--pressed-state-color);
-}
-.footer-forma-icon {
-  width: 24px;
-  height: 24px;
-}
+
 
 /* ================================ */
 /* ===Navigation - for all devise===*/
@@ -525,9 +465,94 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   fill: currentColor;
 }
 
+/* ===Footer - for all devise===*/
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  font-family: var(--secondari-font);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+}
+.logo-footer {
+  color: var(--primary-brand-color);
+}
+.footer-text {
+  font-size: 16px;
+  color: var(--accent-color);
+  max-width: 264px;
+}
+.footer-title {
+  color: var(--white-color);
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Social media - for all devise*/
+.sociak-media-list {
+  display: flex;
+  gap: 16px;
+}
+/* Footer form - for all devise*/
+.footer-email {
+  background-color: var(--hero-background-color);
+  border: 1px solid var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  opacity: 0.3;
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email::placeholder {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  padding: 8px 0 8px 16px;
+}
+.footer-email:not(:placeholder-shown) {
+  border-color: var(--primary-brand-color);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.footer-email:placeholder-shown {
+  border-color: var(--white-color);
+}
+.footer-form-btn {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  max-width: 165px;
+  max-height: 40px;
+  font-family: var(--primari-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+.footer-form-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+.footer-forma-icon {
+  width: 24px;
+  height: 24px;
+}
 
-
-/* --------------------------------modal----------------------------------- */
+/* ===Modal - for all devise===*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -537,22 +562,20 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   background: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 576px;
   background-color: var(--modal-bgc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.is-hidden {
-  opacity: 0;
-  visibility: none;
-  pointer-events: none;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -579,7 +602,6 @@ del all section -> mobile.style -> tablet!!!!!!!*/
 .close-icon {
   fill: currentColor;
 }
-
 /* modal form */
 .modal-forma-container {
   display: inline-block;
@@ -595,7 +617,7 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   position: relative;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
@@ -615,9 +637,6 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
-  width: 360px;
-  height: 40px;
-  margin: 4px 24px 8px;
   padding-left: 38px;
   opacity: 0.2;
   outline: transparent;
@@ -636,8 +655,6 @@ del all section -> mobile.style -> tablet!!!!!!!*/
 }
 .textarea {
   resize: none;
-  width: 360px;
-  min-height: 120px;
   padding: 8px 16px;
 }
 .textarea::placeholder {
@@ -648,19 +665,13 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   letter-spacing: 0.04em;
   color: var(--darc-color);
 }
-.accept-check {
-  display: flex;
-}
-.accept-check span {
+.accept-check .checkbox-groups {
   width: 16px;
   height: 16px;
   border: 1px solid var(--darc-color);
   border-radius: 2px;
   margin-left: 24px;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -669,7 +680,6 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   background-color: var(--pressed-state-color);
   border-color: var(--pressed-state-color);
 }
-
 .policy-link {
   font-weight: 400;
   font-size: 12px;
@@ -681,9 +691,7 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   text-decoration: underline var(--primary-brand-color);
   text-underline-position: under;
 }
-.submit-modal {
-  margin: 24px 120px;
-}
+
 /* ------------------------------PORTFOLIO.HTML------------- */
 
 /* Button filter */
