@@ -61,7 +61,6 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    
     .navigation-items,
     .contacts-items {
         display: none;
@@ -69,8 +68,7 @@
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding: 24px 16px;
     }
     .burger-btn {
         background-color: transparent;
@@ -534,13 +532,20 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         padding-left: 16px;
         padding-right: 16px;
     }
+    .nav-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 736px;
+        width: 100%;
+    }
+    .navigation-items {
+        margin-left: 120px;
+    }
     .contacts-item {
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-    }
-    .tablet-nav-container {
-        margin: 0 120px;
     }
     .contacts-items {
         flex-direction: column;
@@ -556,8 +561,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
     }
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        min-width: 496px;
+    }
     .container-hero {
-        max-width: 496px;
     }
     .specialty-section-container {
         padding-left: 16px;
