@@ -307,60 +307,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 /* ======Modal mobile 0-767px====== */
-@media screen and (max-width: 767px) {
-    .modal {
-        max-width: 392px;
-        min-height: 586px;
-        width: 100%;
-        
-    }
-    .modal-title {
-        margin: 24px 16px 16px;
-    }
-    .modal-forma {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    .modal-forma-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .modal-subtitle {
-        margin-left: 16px;
-    }
-    .modal-icon {
-        top: 28px;
-        left: 34px;
-    }
-    .modal-text {
-        max-width: 360px;
-        height: 40px;
-        margin: 4px 16px 8px;
-        width: calc(100% - 2 * 15px);
-    }
-    .textarea {
-        max-width: 360px;
-        height: 120px;
-    }
-    .accept-check-container {
-        margin-left: 16px;
-    }
-    .accept-check .checkbox-groups {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .submit-modal {
-        width: 169px;
-        height: 56px;
-        margin: 24px 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
+
 @media screen and (max-width: 430px) {
     .mobile-contacts-tel-link {
         font-size: 30px;
@@ -454,6 +401,140 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-bottom: 8px;
     }
 }
+
+/*Styles for MOBILE and TABLET */
+@media screen and (max-width: 1200px) {
+    .specialty-icons {
+        display: none;
+    }
+    .features-section {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+.container-hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero-title {
+        max-width: 320px;
+        text-align: center;
+        min-width: 320px;
+        padding-top: 112px;
+        margin-bottom: 88px;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .hero-btn {
+        margin-bottom: 112px;
+    }
+
+    .section {
+        padding: 96px 0;
+    }
+
+    .specialty-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        margin-bottom: 8px;
+    }
+
+    .specialty-text {
+        font-weight: 500;
+    }
+
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .footer-logo {
+        line-height: 1.17;
+    }
+
+    .footer-text {
+        text-align: left;
+        margin-top: 18px;
+    }
+
+    .sociak-media-link {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-brand-color);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-title {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .modal {
+        max-width: 392px;
+        min-height: 586px;
+        width: 100%;
+    }
+    .modal-title {
+        margin: 24px 16px 16px;
+    }
+    .modal-forma {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .modal-forma-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .modal-subtitle {
+        margin-left: 16px;
+    }
+    .modal-icon {
+        top: 28px;
+        left: 34px;
+    }
+    .modal-text {
+        max-width: 360px;
+        height: 40px;
+        margin: 4px 16px 8px;
+        width: calc(100% - 2 * 15px);
+    }
+    .textarea {
+        max-width: 360px;
+        height: 120px;
+    }
+    .accept-check-container {
+        margin-left: 16px;
+    }
+    .accept-check .checkbox-groups {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .submit-modal {
+        width: 169px;
+        height: 56px;
+        margin: 24px 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 /* --------------only TABLET------------ */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container {
@@ -559,7 +640,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .footer-form-btn {
         margin-left: 24px;
     }
-
+    .modal {
+        min-width: 408px;
+    }
 
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
@@ -578,74 +661,4 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px
         margin-right: auto;
     }
 }
-/*Styles for MOBILE and TABLET */
-@media screen and (max-width: 1200px) {
-    .specialty-icons {
-        display: none;
-    }
 
-    .features-section {
-        display: none;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .container-hero {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .hero-title {
-        max-width: 320px;
-        text-align: center;
-        min-width: 320px;
-        padding-top: 112px;
-        margin-bottom: 88px;
-        font-size: 36px;
-        line-height: 1.11;
-    }
-    .hero-btn {
-        margin-bottom: 112px;
-    }
-    .section {
-        padding: 96px 0;
-    }
-    .specialty-subtitle {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        margin-bottom: 8px;
-    }
-    .specialty-text {
-        font-weight: 500;
-    }
-    .footer {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-    .footer-logo {
-        line-height: 1.17;
-    }
-    .footer-text {
-        text-align: left;
-        margin-top: 18px;
-    }
-    .sociak-media-link {
-        display: flex;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        background: var(--primary-brand-color);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-    }
-    .footer-title {
-        display: block;
-        margin-bottom: 16px;
-    }
-}
