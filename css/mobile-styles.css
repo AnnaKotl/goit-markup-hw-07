@@ -376,7 +376,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
     /* Hero */
     .container-hero {
-        max-width: 496px;
         align-items: center;
         text-align: center;
     }
@@ -413,17 +412,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (max-width: 1199px) {
-.container-hero {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
     .hero-title {
         max-width: 320px;
         text-align: center;
@@ -567,6 +555,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-size: cover;
         margin-left: auto;
         margin-right: auto;
+    }
+    .container-hero {
+        max-width: 496px;
     }
     .specialty-section-container {
         padding-left: 16px;
