@@ -61,6 +61,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+    
     .navigation-items,
     .contacts-items {
         display: none;
@@ -266,34 +267,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         align-items: center;
         justify-content: center;
     }
-    .footer {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-    .footer-logo {
-        line-height: 1.17;
-    }
-    .footer-text {
-        text-align: left;
-        margin-top: 18px;
-        padding-bottom: 72px;
-    }
-    .sociak-media-link {
-        display: flex;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        background: var(--primary-brand-color);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-    }
     .social-media-container {
         padding-bottom: 72px;
-    }
-    .footer-title {
-        display: block;
-        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .footer-forma-container {
         display: flex;
@@ -306,6 +285,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+    .footer-text {
+        padding-bottom: 72px;
     }
     .footer-form {
         display: flex;
@@ -391,24 +373,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 /* /========MOBILE DONE========/ */
 
-/* ============================= */
-@media screen and (max-width: 1200px) {
-    .specialty-icons {
-        display: none;
-    }
-    .features-section {
-        display: none;
-    }
-}
-/* ==============768px=(16px*2)+736px
-16px - padding =====================*/
+/* ===Styles for TABLET and DESKTOP=== */
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .burger-btn, .mobile-menu {
+    .burger-btn,
+    .mobile-menu {
         display: none;
     }
     /* Menu Nav */
@@ -471,8 +439,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-bottom: 48px;
         min-width: 496px;
     }
-
-
     /* Specialty section tablet */
     .specialty-items {
         display: flex;
@@ -490,6 +456,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 /* --------------only TABLET------------ */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .header-container {
         padding-left: 16px;
         padding-right: 16px;
@@ -562,6 +533,32 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         width: 168px;
         height: 88px;
     }
+    .tablet-footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+    }
+    .footer-forma {
+        margin-top: 72px;
+    }
+    .footer-forma-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .footer-email {
+        width: 264px;
+        height: 40px;
+    }
+    .footer-form-btn {
+        margin-left: 24px;
+    }
 
 
 }
@@ -581,7 +578,16 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px
         margin-right: auto;
     }
 }
-/* Hero for mob and tablet */
+/*Styles for MOBILE and TABLET */
+@media screen and (max-width: 1200px) {
+    .specialty-icons {
+        display: none;
+    }
+
+    .features-section {
+        display: none;
+    }
+}
 @media screen and (max-width: 1199px) {
     .container-hero {
         width: 100%;
@@ -616,5 +622,30 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px
     }
     .specialty-text {
         font-weight: 500;
+    }
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .footer-logo {
+        line-height: 1.17;
+    }
+    .footer-text {
+        text-align: left;
+        margin-top: 18px;
+    }
+    .sociak-media-link {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-brand-color);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .footer-title {
+        display: block;
+        margin-bottom: 16px;
     }
 }

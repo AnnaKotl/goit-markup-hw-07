@@ -444,12 +444,12 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   font-weight: 500;
   font-size: 16px;
 }
-/* Social media - for all devise*/
+/* Social media*/
 .sociak-media-list {
   display: flex;
   gap: 16px;
 }
-/* Footer form - for all devise*/
+/* Footer form*/
 .footer-email {
   background-color: var(--hero-background-color);
   border: 1px solid var(--white-color);
