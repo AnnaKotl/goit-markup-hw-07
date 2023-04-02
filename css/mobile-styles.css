@@ -199,28 +199,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .container-hero {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .hero-title {
-        max-width: 320px;
-        text-align: center;
-        min-width: 320px;
-        padding-top: 112px;
-        margin-bottom: 88px;
-        font-size: 36px;
-        line-height: 1.11;
-    }
-    .hero-btn {
-        margin-bottom: 112px;
-    }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -241,23 +219,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 /* ======Specialty section mobile 0-767px====== */
 @media screen and (max-width: 767px) {
-    .section {
-        padding: 96px 0;
-    }
     .specialty-subtitle {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
         text-align: center;
-        margin-bottom: 8px;
     }
     .specialty-items .specialty-item:not(:last-child) {
         margin-bottom: 72px;
     }
-    .specialty-text {
-        font-weight: 500;
-    }
-    
 }   
 /* ======Team section mobile 0-767px====== */
 @media screen and (max-width: 767px) {
@@ -359,7 +326,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 /* ======Modal mobile 0-767px====== */
 @media screen and (max-width: 767px) {
-
     .modal {
         max-width: 392px;
         min-height: 586px;
@@ -424,6 +390,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 }
 /* /========MOBILE DONE========/ */
+
+/* ============================= */
 @media screen and (max-width: 1200px) {
     .specialty-icons {
         display: none;
@@ -432,7 +400,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         display: none;
     }
 }
-/* --------------TABLET------------ */
 /* ==============768px=(16px*2)+736px
 16px - padding =====================*/
 @media screen and (min-width: 768px) {
@@ -444,20 +411,71 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .burger-btn, .mobile-menu {
         display: none;
     }
-    
-
+    /* Menu Nav */
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+    .navigation-items {
+        display: flex;
+        gap: 40px;
+    }
+    .nav-link {
+        position: relative;
+        color: var(--hero-background-color);
+        font-weight: 500;
+        font-size: 16px;
+        padding: 21px 0 27px 0;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--primary-brand-color);
+    }
+    .nav-link.active {
+        color: var(--pressed-state-color);
+    }
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--pressed-state-color);
+        border-radius: 2px;
+    }
+    /* Contacts */
+    .contacts {
+        margin-left: auto;
+    }
+    .contacts-items {
+        display: flex;
+    }
+    .contacts-item {
+        font-weight: 400;
+        color: var(--text-color);
+    }
+    .contacts-item:hover,
+    .contacts-item:focus {
+        color: var(--primary-brand-color);
+    }
+    /* Hero */
+    .container-hero {
+        max-width: 496px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 48px;
+        min-width: 496px;
+    }
 
 
     /* Specialty section tablet */
     .specialty-items {
         display: flex;
-        gap: 24px;
-    }
-    .specialty-icons {
-        background-color: var(--light-color);
-        padding: 24px 100px;
-        width: 264px;
-        height: 112px;
     }
     .subtitle {
         font-weight: 500;
@@ -469,7 +487,134 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-top: 8px;
         margin-bottom: 8px;
     }
-
-    
 }
+/* --------------only TABLET------------ */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .contacts-item {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+    .tablet-nav-container {
+        margin: 0 120px;
+    }
+    .contacts-items {
+        flex-direction: column;
+    }
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-tablet.jpg);
+        background-color: var(--hero-background-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .specialty-section-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .specialty-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .specialty-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .team-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .customers-container {
+        max-width: 552px;
+    }
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 552px;
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .customers-item {
+        width: calc((100% - 24px) / 3);
+        width: 168px;
+        height: 88px;
+    }
 
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    .hero-section {
+        background-color: var(--hero-background-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-tablet-2x.jpg);
+        background-color: var(--hero-background-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Hero for mob and tablet */
+@media screen and (max-width: 1199px) {
+    .container-hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hero-title {
+        max-width: 320px;
+        text-align: center;
+        min-width: 320px;
+        padding-top: 112px;
+        margin-bottom: 88px;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+    .hero-btn {
+        margin-bottom: 112px;
+    }
+    .section {
+        padding: 96px 0;
+    }
+    .specialty-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        margin-bottom: 8px;
+    }
+    .specialty-text {
+        font-weight: 500;
+    }
+}
