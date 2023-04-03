@@ -509,6 +509,7 @@ del all section -> mobile.style -> tablet!!!!!!!*/
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding: 8px 16px;
 }
 .footer-email:placeholder-shown {
   border-color: var(--white-color);

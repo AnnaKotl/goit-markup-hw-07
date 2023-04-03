@@ -36,7 +36,6 @@
     padding-left: auto;
     padding-right: auto;
 }
-/* ????????????????????????? */
 @media screen and (min-width: 320px) {
     .container {
         min-width: 288px;
@@ -565,8 +564,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         font-size: 56px;
         line-height: 1.07;
         min-width: 496px;
-    }
-    .container-hero {
     }
     .specialty-section-container {
         padding-left: 16px;
